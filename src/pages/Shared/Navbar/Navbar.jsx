@@ -30,7 +30,7 @@ const Navbar = () => {
                 <Link to="/">
                     <div className="flex items-center">
                         <img className="w-12" src={logo} alt="logo" />
-                        <h2 className="text-2xl font-extrabold hover:text-[#ED4A43]">Corporate Elevate</h2>
+                        <h2 className="text-2xl font-extrabold hover:text-[#ED4A43]">Corp Elevate</h2>
                     </div>
                 </Link>
             </div>

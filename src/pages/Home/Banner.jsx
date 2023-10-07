@@ -1,14 +1,13 @@
-import React from 'react';
+import banner from '../../assets/banner.jpg'
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
-            <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero min-h-screen" style={{ backgroundImage: `url(${banner}` }}>
+            <div className="hero-overlay bg-black bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
-                <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                <div className="max-w-xl">
+                    <h1 className="mb-5 text-5xl font-bold">Corporate Event Experts</h1>
+                    <p className="mb-5">Discover seamless event planning and execution that leaves a lasting impression. Our experienced team specializes in crafting unforgettable corporate events tailored to your unique needs. Let us transform your vision into reality. Explore our services now!</p>
                 </div>
             </div>
         </div>
