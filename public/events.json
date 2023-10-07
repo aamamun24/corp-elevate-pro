@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Corporate Conference",
+    "image": "https://i.ibb.co/HXvxDjG/Corporate-Conference.jpg",
+    "price": 5000,
+    "description": "Plan and execute successful corporate conferences that leave a lasting impression on your clients and employees. Our expert event management team takes care of every detail, from venue selection and logistics to program development and audiovisual support. We ensure that your conference runs smoothly, allowing you to focus on your business objectives. Whether it's a small executive gathering or a large-scale industry conference, we tailor our services to meet your specific needs.\n\nWith a proven track record of organizing conferences for Fortune 500 companies, we understand the importance of professionalism and attention to detail. Our goal is to make your event memorable, engaging, and productive. Contact us today to discuss your conference goals and let us help you turn them into reality."
+  },
+  {
+    "id": 2,
+    "name": "Product Launch Event",
+    "image": "https://i.ibb.co/LxMvHnD/Product-Launch-Event.jpg",
+    "price": 8000,
+    "description": "Create a buzz around your new product with our comprehensive event management services. Our team specializes in planning and executing product launch events that captivate your target audience and generate excitement. From venue selection and branding to promotional campaigns and media coordination, we handle it all.\n\nWe understand the significance of a successful product launch. That's why we work closely with your team to ensure that every aspect aligns with your brand identity and objectives. Our creative approach, attention to detail, and industry expertise guarantee a memorable and impactful launch event. Whether it's a new tech gadget, a fashion line, or a culinary innovation, we have the experience to make your product shine.\n\nLet us help you make your product launch a success. Contact us today to discuss your project, and let's get started on creating an unforgettable event."
+  },
+  {
+    "id": 3,
+    "name": "Team Building Retreat",
+    "image": "https://i.ibb.co/Yk84tnG/Team-Building-Retreat.jpg",
+    "price": 3500,
+    "description": "Boost team morale with a memorable team-building retreat that fosters collaboration, communication, and camaraderie among your employees. Our event management team specializes in designing retreats that combine fun activities, outdoor adventures, and strategic workshops to create a unique and impactful experience.\n\nWe understand that a cohesive and motivated team is essential for your organization's success. Our retreats are tailored to your company's goals and values, ensuring that they align with your business objectives. Whether you want to enhance teamwork, leadership skills, or employee well-being, our retreats are designed to deliver results.\n\nEscape the office and embark on a journey of growth and development with your team. Contact us today to explore the possibilities of a customized team-building retreat that will leave a lasting positive impact on your organization."
+  },
+  {
+    "id": 4,
+    "name": "Holiday Office Party",
+    "image": "https://i.ibb.co/3SCR80g/Holiday-Office-Party.jpg",
+    "price": 7500,
+    "description": "Celebrate the holidays with a fun-filled office party that brings joy and unity to your workplace. Our event management team specializes in creating festive and memorable holiday parties that cater to your company's culture and preferences. From venue selection and decor to entertainment and catering, we take care of all the details, allowing you to relax and enjoy the festivities.\n\nWe believe that a well-planned holiday party can boost employee morale, strengthen bonds, and create cherished memories. Whether you prefer a traditional holiday celebration or a unique themed event, we can make it happen. Let us transform your office into a winter wonderland or a tropical paradise for a holiday party that your employees will rave about.\n\nMake this holiday season special for your team. Contact us today to start planning the perfect office party that spreads cheer and goodwill."
+  },
+  {
+    "id": 5,
+    "name": "Product Training Seminar",
+    "image": "https://i.ibb.co/Cn4CBXQ/Product-Training-Seminar.jpg",
+    "price": 6000,
+    "description": "Train your employees and partners effectively with our expertly organized product training seminars. Our event management team specializes in developing informative and engaging seminars that empower your audience with the knowledge and skills they need to excel. From curriculum design and speaker selection to logistics and materials, we handle every aspect of your training event.\n\nWe understand that successful training is crucial for your business's growth and success. Our seminars are designed to be interactive, informative, and tailored to your industry and audience. Whether you're introducing new products, enhancing technical skills, or conducting compliance training, we have the expertise to make your training seminars impactful.\n\nInvest in the professional development of your team. Contact us today to discuss your training objectives and let us create a customized seminar that equips your employees and partners for success."
+  },
+  {
+    "id": 6,
+    "name": "Awards Gala Dinner",
+    "image": "https://i.ibb.co/NCt5w37/Awards-Gala-Dinner.jpg",
+    "price": 10000,
+    "description": "Recognize and reward excellence with an elegant awards gala dinner that honors your achievements and inspires your team. Our event management team specializes in creating glamorous and memorable gala events that celebrate success and foster a sense of pride and accomplishment.\n\nWe understand the importance of showcasing your organization's achievements in style. From venue selection and decor to entertainment and award presentations, we ensure that every detail reflects the prestige of your accomplishments. Whether you're recognizing outstanding employees, partners, or industry leaders, our gala dinners leave a lasting impression.\n\nElevate your recognition efforts and celebrate success with a touch of sophistication. Contact us today to start planning an awards gala dinner that shines the spotlight on excellence within your organization."
+  }
+]
