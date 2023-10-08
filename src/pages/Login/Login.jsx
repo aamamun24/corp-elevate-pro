@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
 
@@ -18,10 +21,18 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result.user);
-                navigate(location?.state ? location.state : '/')
+                toast.success('Login Successful', {
+                    theme: "colored",
+                })
+                setTimeout(() => {
+                    navigate(location?.state ? location.state : '/')
+                }, 2000);
             })
             .catch(error => {
-                console.error(error)
+                console.error(error.message)
+                toast.error("Email or password does not match.", {
+                    theme: "colored",
+                });
             })
     }
 
@@ -29,10 +40,18 @@ const Login = () => {
         signInWithGoogle()
             .then(result => {
                 console.log(result.user);
-                navigate(location?.state ? location.state : '/')
+                toast.success('Login Successful', {
+                    theme: "colored",
+                })
+                setTimeout(() => {
+                    navigate(location?.state ? location.state : '/')
+                }, 2000);
             })
             .catch(error => {
                 console.error(error)
+                toast.error(error.message, {
+                    theme: "colored",
+                });
             })
     }
 
@@ -56,11 +75,12 @@ const Login = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Login</button>
+                    <button className="bg-[#ED4A43] rounded-md py-2 text-xl text-white font-medium">Login</button>
                 </div>
-                <button onClick={handleGoogleSignIn} className="btn btn-primary">Google</button>
+                <button onClick={handleGoogleSignIn} className="btn btn-outline"><FcGoogle className="text-2xl"/> Login with Google</button>
                 <p className="text-[#706F6F] font-semibold text-center">Don't Have An Account ? <Link to="/register" className="text-[#ED4A43]">Register</Link></p>
             </form>
+            <ToastContainer />
         </div>
     );
 };

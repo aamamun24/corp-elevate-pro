@@ -1,11 +1,14 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, userUpdateProfile } = useContext(AuthContext);
+    const navigate = useNavigate()
 
 
     const handleRegister = e => {
@@ -17,12 +20,43 @@ const Register = () => {
         const password = form.get('password')
         console.log(name, photo, email, password);
 
+        if (password.length < 6) {
+            toast.error('Password must be at least 6 characters', {
+                theme: "colored",
+            });
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            toast.error('Password must be at least one uppercase later', {
+                theme: "colored",
+            });
+            return;
+        }
+        else if (!/[#?!@$%^&*-]/.test(password)) {
+            toast.error('Password must be at least one special character', {
+                theme: "colored",
+            });
+            return;
+        }
+
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                userUpdateProfile(name, photo)
+                    .then(() => {
+                        toast.success('Registration Complete Successfully', {
+                            theme: "colored",
+                        });
+                        setTimeout(() => {
+                            navigate('/')
+                        }, 2000);
+                    })
             })
             .catch(error => {
                 console.error(error)
+                toast.error(error.message, {
+                    theme: "colored",
+                });
             })
     }
 
@@ -58,10 +92,11 @@ const Register = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Register</button>
+                    <button className="bg-[#ED4A43] rounded-md py-2 text-xl text-white font-medium">Register</button>
                 </div>
                 <p className="text-[#706F6F] font-semibold text-center">Already Have An Account? <Link to="/login" className="text-[#ED4A43]">Login</Link></p>
             </form>
+            <ToastContainer />
         </div>
     );
 };
