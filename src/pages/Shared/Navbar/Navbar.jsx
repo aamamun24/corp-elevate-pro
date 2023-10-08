@@ -14,6 +14,26 @@ const Navbar = () => {
                 Home
             </NavLink>
         </li>
+        <li>
+            <NavLink
+                to="/login"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#ED4A43] underline" : ""
+                }
+            >
+                Login
+            </NavLink>
+        </li>
+        <li>
+            <NavLink
+                to="/register"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#ED4A43] underline" : ""
+                }
+            >
+                Register
+            </NavLink>
+        </li>
     </>
 
     return (
@@ -29,7 +49,7 @@ const Navbar = () => {
                 </div>
                 <Link to="/">
                     <div className="flex items-center">
-                        <img className="w-12" src={logo} alt="logo" />
+                        {/* <img className="w-12" src={logo} alt="logo" /> */}
                         <h2 className="text-2xl font-extrabold hover:text-[#ED4A43]">Corp Elevate</h2>
                     </div>
                 </Link>
@@ -42,7 +62,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 <div className="flex gap-3 items-center">
                     <h2 className="text-xl font-medium text-[#292929]">Abdullah</h2>
-                    <img className="w-10 rounded-full" src={logo} />
+                    {/* <img className="w-10 rounded-full" src={logo} /> */}
                     <Link to='/login' className="bg-[#ED4A43] py-2 px-6 rounded-lg text-white font-medium">Login</Link>
                 </div>
             </div>
