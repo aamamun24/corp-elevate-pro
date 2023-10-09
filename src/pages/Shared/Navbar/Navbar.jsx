@@ -34,6 +34,16 @@ const Navbar = () => {
         </li>
         <li>
             <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-[#ED4A43] underline" : ""
+                }
+            >
+                Contact
+            </NavLink>
+        </li>
+        <li>
+            <NavLink
                 to="/register"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#ED4A43] underline" : ""
@@ -57,7 +67,6 @@ const Navbar = () => {
                 </div>
                 <Link to="/">
                     <div className="flex items-center">
-                        {/* <img className="w-12" src={logo} alt="logo" /> */}
                         <h2 className="text-2xl font-extrabold hover:text-[#ED4A43]">Corp Elevate</h2>
                     </div>
                 </Link>

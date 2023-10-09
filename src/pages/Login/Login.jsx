@@ -77,7 +77,7 @@ const Login = () => {
                 <div className="form-control mt-6">
                     <button className="bg-[#ED4A43] rounded-md py-2 text-xl text-white font-medium">Login</button>
                 </div>
-                <button onClick={handleGoogleSignIn} className="btn btn-outline"><FcGoogle className="text-2xl"/> Login with Google</button>
+                <button onClick={handleGoogleSignIn} className="btn btn-outline"><FcGoogle className="text-2xl" /> Login with Google</button>
                 <p className="text-[#706F6F] font-semibold text-center">Don't Have An Account ? <Link to="/register" className="text-[#ED4A43]">Register</Link></p>
             </form>
             <ToastContainer />
