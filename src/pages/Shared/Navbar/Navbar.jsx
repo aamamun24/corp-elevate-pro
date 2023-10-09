@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '/logo.png'
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
@@ -25,12 +24,12 @@ const Navbar = () => {
         </li>
         <li>
             <NavLink
-                to="/login"
+                to="/about"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "text-[#ED4A43] underline" : ""
                 }
             >
-                Login
+                About Us
             </NavLink>
         </li>
         <li>
